@@ -1,22 +1,143 @@
-# SkillRoom
+# 🎙️ VoicaHire
 
-VOICAHIRE
-Project Summary
+## AI-Powered Recruitment & Candidate Assessment Platform
 
-VoicaHire is an AI-powered recruitment and candidate assessment platform designed to automate hiring workflows through voice interviews, multilingual communication, assessments, ATS integration, and candidate management.
+VoicaHire is an AI-powered recruitment and candidate assessment platform designed to automate hiring workflows through voice interviews, multilingual communication, technical assessments, ATS integration, and candidate management.
 
-The platform combines conversational AI, speech processing, candidate tracking, assessment management, and cloud deployment infrastructure to create a complete recruitment ecosystem.
+The platform combines conversational AI, speech processing, candidate tracking, assessment management, and cloud deployment infrastructure to create a complete recruitment ecosystem for modern hiring teams.
 
-Project Objectives
-Automate candidate screening
-Conduct AI-driven voice interviews
-Support multilingual communication
-Integrate with Applicant Tracking Systems (ATS)
-Manage assessments and evaluations
-Improve recruitment efficiency
-Reduce manual recruiter workload
-Enable scalable hiring processes
-System Architecture
+---
+
+# 📖 Table of Contents
+
+* Project Overview
+* Project Objectives
+* Technology Stack
+* Key Features
+* System Architecture
+* Project Structure
+* Frontend Components
+* Theme Management Flow
+* Browser Interview Flow
+* Phone Interview Flow
+* Assessment Workflow
+* Candidate Workflow
+* ATS Integration Workflow
+* AI Processing Workflow
+* Deployment Architecture
+* Redis Usage
+* AWS Infrastructure
+* Production Configuration
+* Key Learnings
+* Project Outcome
+
+---
+
+# 🚀 Project Overview
+
+VoicaHire streamlines the recruitment process by enabling recruiters to conduct AI-driven interviews, assign technical assessments, manage candidates, and integrate with ATS systems from a single platform.
+
+The platform supports both browser-based interviews and phone interviews while leveraging AI models to generate questions, evaluate responses, and automate candidate screening.
+
+---
+
+# 🎯 Project Objectives
+
+* Automate candidate screening
+* Conduct AI-powered voice interviews
+* Support multilingual communication
+* Integrate with Applicant Tracking Systems (ATS)
+* Manage assessments and evaluations
+* Improve recruitment efficiency
+* Reduce manual recruiter workload
+* Enable scalable hiring processes
+* Centralize recruitment workflows
+* Provide production-ready deployment architecture
+
+---
+
+# 🛠️ Technology Stack
+
+| Technology        | Category                | Role                       |
+| ----------------- | ----------------------- | -------------------------- |
+| React.js          | Frontend                | User Interface Development |
+| Vite              | Build Tool              | Fast Development & Builds  |
+| JavaScript (JSX)  | Language                | Application Logic          |
+| Tailwind CSS      | Styling                 | Responsive UI Design       |
+| CSS3              | Styling                 | Component Styling          |
+| HTML5             | Markup                  | Web Page Structure         |
+| Context API       | State Management        | Global State Handling      |
+| Axios             | API Client              | Backend Communication      |
+| ESLint            | Code Quality            | Code Standards             |
+| Node.js           | Backend Runtime         | Server Execution           |
+| Express.js        | Backend Framework       | REST API Development       |
+| MongoDB           | Database                | Data Storage               |
+| Redis             | Cache                   | Performance Optimization   |
+| Groq LLM          | Artificial Intelligence | Interview Intelligence     |
+| Whisper           | Speech AI               | Speech-to-Text             |
+| Twilio            | Communication Service   | Phone Interviews           |
+| Exotel            | Telephony Service       | Calling Infrastructure     |
+| SMTP              | Email Service           | Notifications              |
+| Docker            | Containerization        | Application Packaging      |
+| Docker Compose    | Orchestration           | Multi-Service Deployment   |
+| AWS ECS           | Cloud Platform          | Container Hosting          |
+| AWS EC2           | Cloud Platform          | Infrastructure Hosting     |
+| AWS Mumbai Region | Cloud Region            | Production Deployment      |
+| Nginx             | Reverse Proxy           | Request Routing            |
+| JWT               | Authentication          | Secure Access              |
+| Local Storage     | Browser Storage         | Theme Persistence          |
+| Git               | Version Control         | Source Management          |
+| GitHub            | Repository Hosting      | Collaboration              |
+| npm               | Package Manager         | Dependency Management      |
+| Yarn              | Package Manager         | Package Installation       |
+
+---
+
+# ✨ Key Features
+
+### 🎙 AI Voice Interviews
+
+* Browser-based voice interviews
+* Phone-based interviews
+* AI-generated questions
+* Speech transcription
+* Multilingual communication
+
+### 📝 Assessment Platform
+
+* Assessment creation
+* Assessment assignment
+* Candidate assessment portal
+* Automated evaluation
+* Performance tracking
+
+### 👨‍💼 Recruiter Dashboard
+
+* Candidate management
+* Interview monitoring
+* Assessment tracking
+* ATS synchronization
+
+### 🤖 AI Capabilities
+
+* Question generation
+* Candidate interaction
+* Response analysis
+* Conversational intelligence
+
+### ☁️ Infrastructure
+
+* Docker deployment
+* AWS ECS support
+* Redis caching
+* Nginx reverse proxy
+* Production-ready configuration
+
+---
+
+# 🏗️ System Architecture
+
+```text
 Candidate
     │
     ▼
@@ -42,240 +163,13 @@ Interview Results
  │
  ▼
 Recruiter Dashboard
-Technology Stack
+```
 
+---
 
+# 📁 Project Structure
 
-echnology	Category	Role in Project
-React.js	Frontend	User interface development
-Vite	Frontend Build Tool	Fast development and build
-JavaScript (JSX)	Programming Language	Frontend application logic
-Tailwind CSS	Styling Framework	Responsive UI styling
-CSS3	Styling	Component and page styling
-HTML5	Markup Language	Web page structure
-Context API	State Management	Global state handling
-Axios	API Client	Backend communication
-ESLint	Code Quality	Code linting and standards
-Node.js	Backend Runtime	Server-side execution
-Express.js	Backend Framework	REST API development
-MongoDB	Database	Persistent data storage
-Redis	Cache Database	Fast temporary storage
-Groq LLM	Artificial Intelligence	AI interview generation
-Whisper	Speech Processing	Speech-to-text conversion
-Twilio	Communication Service	Phone interview handling
-Exotel	Communication Service	Voice calling workflows
-Docker	Containerization	Application packaging
-Docker Compose	Orchestration	Multi-service management
-AWS ECS	Cloud Deployment	Container deployment
-AWS Mumbai Region	Cloud Infrastructure	Application hosting
-Nginx	Reverse Proxy	Request routing
-JSON	Data Format	Data exchange
-REST API	Communication Architecture	Frontend-backend interaction
-Local Storage	Browser Storage	Theme persistence
-Git	Version Control	Source code management
-GitHub	Repository Hosting	Code collaboration
-npm	Package Manager	Dependency management
-Yarn	Package Manager	Alternative dependency management
-PostCSS	CSS Processing	CSS transformation
-Dockerfile	Container Configuration	Image creation
-Environment Variables (.env)	Configuration	Secure application settings
-
-
-
-
-Frontend Technologies
-React.js
-
-Purpose:
-
-User Interface Development
-Component-based architecture
-State management
-
-Used For:
-
-Candidate Portal
-Dashboard
-Interview UI
-Assessment Screens
-Vite
-
-Purpose:
-
-Fast frontend build system
-Development server
-
-Benefits:
-
-Fast reloads
-Optimized builds
-Tailwind CSS
-
-Purpose:
-
-UI Styling
-
-Benefits:
-
-Utility-first styling
-Responsive design
-Faster UI development
-Context API
-
-Purpose:
-
-Global state management
-
-Used For:
-
-Theme management
-Shared application state
-Axios
-
-Purpose:
-
-API communication
-
-Used For:
-
-Frontend ↔ Backend requests
-Backend Technologies
-Node.js
-
-Purpose:
-
-Backend runtime environment
-
-Responsibilities:
-
-Business logic
-API execution
-Service integration
-Express.js
-
-Purpose:
-
-Backend API framework
-
-Responsibilities:
-
-Route handling
-Request processing
-Middleware execution
-Database Technologies
-MongoDB
-
-Purpose:
-
-Primary Database
-
-Stores:
-
-Candidates
-Assessments
-Interview Data
-Recruiter Information
-Redis
-
-Purpose:
-
-Caching Layer
-
-Benefits:
-
-Faster responses
-Reduced database load
-Temporary data storage
-AI Technologies
-Groq LLM
-
-Purpose:
-
-AI Interview Engine
-
-Responsibilities:
-
-Question generation
-Candidate interaction
-Response analysis
-Conversation flow
-Whisper
-
-Purpose:
-
-Speech-To-Text
-
-Responsibilities:
-
-Voice transcription
-Audio processing
-Language support
-Communication Technologies
-Twilio
-
-Purpose:
-
-Voice calling infrastructure
-
-Used For:
-
-Phone interviews
-Voice communication
-Exotel
-
-Purpose:
-
-Telephony integration
-
-Used For:
-
-Candidate calling workflows
-Interview calls
-DevOps Technologies
-Docker
-
-Purpose:
-
-Containerization
-
-Benefits:
-
-Environment consistency
-Easy deployment
-Docker Compose
-
-Purpose:
-
-Multi-container management
-
-Used For:
-
-Frontend
-Backend
-Database
-Redis
-AWS ECS
-
-Purpose:
-
-Container deployment
-
-Benefits:
-
-Scalable infrastructure
-Cloud hosting
-Nginx
-
-Purpose:
-
-Reverse Proxy
-
-Responsibilities:
-
-Request routing
-Traffic handling
-Production serving
-Complete Project Structure
+```text
 voicahire-beta/
 
 ├── Backend/
@@ -290,7 +184,6 @@ voicahire-beta/
 │   │   └── index.html
 │   │
 │   ├── src/
-│   │   │
 │   │   ├── assets/
 │   │   ├── components/
 │   │   ├── context/
@@ -298,7 +191,6 @@ voicahire-beta/
 │   │   ├── pages/
 │   │   ├── services/
 │   │   ├── utils/
-│   │   │
 │   │   ├── App.jsx
 │   │   ├── App.css
 │   │   ├── index.css
@@ -325,116 +217,149 @@ voicahire-beta/
 ├── PROJECT_STRUCTURE.md
 ├── README.md
 └── setup.bat
-Frontend Components
-Assessment Module
-AssessmentAssignment.jsx
+```
+
+---
+
+# 🧩 Frontend Components
+
+## Assessment Module
+
+### AssessmentAssignment.jsx
 
 Responsibilities:
 
-Assign assessments
-Candidate mapping
-Assessment scheduling
-AssessmentDashboard.jsx
+* Assign assessments
+* Candidate mapping
+* Assessment scheduling
+
+### AssessmentDashboard.jsx
 
 Responsibilities:
 
-Assessment monitoring
-Performance tracking
-Assessment overview
-AssessmentTaker.jsx
+* Assessment monitoring
+* Performance tracking
+* Assessment overview
+
+### AssessmentTaker.jsx
 
 Responsibilities:
 
-Candidate assessment interface
-Question handling
-Submission process
-ATS Integration
-ATSIntegrationDashboard.jsx
+* Candidate assessment interface
+* Question handling
+* Submission process
+
+---
+
+## ATS Integration
+
+### ATSIntegrationDashboard.jsx
 
 Responsibilities:
 
-ATS connectivity
-Candidate synchronization
-Recruitment workflow integration
-Candidate Management
-CandidateCard.jsx
+* ATS connectivity
+* Candidate synchronization
+* Recruitment workflow integration
+
+---
+
+## Candidate Management
+
+### CandidateCard.jsx
 
 Responsibilities:
 
-Candidate display
-Candidate summary
-CandidatePortalAccess.jsx
+* Candidate display
+* Candidate summary
+
+### CandidatePortalAccess.jsx
 
 Responsibilities:
 
-Portal permissions
-Candidate access management
-CommunicationPreferences.jsx
+* Portal permissions
+* Candidate access management
+
+### CommunicationPreferences.jsx
 
 Responsibilities:
 
-Notification settings
-Communication channels
-Voice Interview Components
-VoiceSimulator.jsx
+* Notification settings
+* Communication channels
+
+---
+
+## Voice Interview Components
+
+### VoiceSimulator.jsx
 
 Responsibilities:
 
-Voice interview simulation
-Conversation handling
-LanguageSelector.jsx
+* Voice interview simulation
+* Conversation handling
+
+### LanguageSelector.jsx
 
 Responsibilities:
 
-Multilingual support
-Language switching
-OmnichannelTimeline.jsx
+* Multilingual support
+* Language switching
+
+### OmnichannelTimeline.jsx
 
 Responsibilities:
 
-Communication history
-Interaction timeline
-Utility Components
-Navbar.jsx
+* Communication history
+* Interaction timeline
+
+---
+
+## Utility Components
+
+### Navbar.jsx
 
 Application Navigation
 
-Footer.jsx
+### Footer.jsx
 
 Footer Interface
 
-ThemeToggle.jsx
+### ThemeToggle.jsx
 
 Theme Switching
 
-Loader.jsx
+### Loader.jsx
 
 Loading UI
 
-ErrorBoundary.jsx
+### ErrorBoundary.jsx
 
 Application Error Handling
 
-BackButton.jsx
+### BackButton.jsx
 
 Navigation Control
 
-Theme Management Flow
+---
+
+# 🎨 Theme Management Flow
 
 File:
 
+```text
 src/context/ThemeContext.jsx
+```
 
 Responsibilities:
 
-Create Theme Context
-Store theme state
-Persist theme using localStorage
-Enable dark mode
-Enable light mode
+* Create Theme Context
+* Store Theme State
+* Persist Theme using localStorage
+* Enable Dark Mode
+* Enable Light Mode
 
 Flow:
 
+```text
 Application Start
         │
         ▼
@@ -452,7 +377,13 @@ Update State
         │
         ▼
 Save to LocalStorage
-Browser Interview Flow
+```
+
+---
+
+# 🌐 Browser Interview Flow
+
+```text
 Candidate Opens Website
           │
           ▼
@@ -478,7 +409,13 @@ Candidate Response
           │
           ▼
 Repeat Until Completion
-Phone Interview Flow
+```
+
+---
+
+# 📞 Phone Interview Flow
+
+```text
 Candidate Receives Call
           │
           ▼
@@ -504,7 +441,13 @@ Voice Output
           │
           ▼
 Interview Continues
-Assessment Workflow
+```
+
+---
+
+# 📝 Assessment Workflow
+
+```text
 Recruiter
      │
      ▼
@@ -524,7 +467,13 @@ Dashboard Evaluation
      │
      ▼
 Result Analysis
-Candidate Workflow
+```
+
+---
+
+# 👤 Candidate Workflow
+
+```text
 Candidate Registration
           │
           ▼
@@ -541,7 +490,33 @@ Interview / Assessment
           │
           ▼
 Result Tracking
-AI Workflow
+```
+
+---
+
+# 🔗 ATS Integration Workflow
+
+```text
+ATS Platform
+      │
+      ▼
+ATSIntegrationDashboard
+      │
+      ▼
+Candidate Sync
+      │
+      ▼
+Recruiter Dashboard
+      │
+      ▼
+Hiring Workflow
+```
+
+---
+
+# 🤖 AI Processing Workflow
+
+```text
 Voice Input
       │
       ▼
@@ -557,7 +532,33 @@ Generated Response
       │
       ▼
 Candidate Interaction
-Deployment Architecture
+```
+
+---
+
+# ⚡ Redis Usage
+
+Redis is used as a caching layer to improve performance.
+
+### Cached Data
+
+* Interview questions
+* Candidate evaluations
+* AI responses
+* Session data
+* Frequently accessed records
+
+### Benefits
+
+* Faster response time
+* Reduced database load
+* Improved scalability
+
+---
+
+# ☁️ Deployment Architecture
+
+```text
 Frontend
     │
     ▼
@@ -572,20 +573,63 @@ MongoDB Redis
     │
     ▼
 AWS ECS Containers
-Key Learnings From This Project
-React Component Architecture
-Context API State Management
-AI-Powered Interview Systems
-Voice Processing Workflows
-Whisper Integration
-Groq LLM Integration
-ATS Integration Concepts
-Docker Deployment
-AWS ECS Deployment
-Redis Caching
-Production Infrastructure
-Candidate Lifecycle Management
-Assessment Management Systems
-Project Outcome
+```
+
+---
+
+# 🔧 Production Configuration
+
+### Database
+
+* MongoDB
+
+### Cache
+
+* Redis
+
+### AI Services
+
+* Groq LLM
+* Whisper
+
+### Communication
+
+* Twilio
+* Exotel
+
+### Email
+
+* SMTP
+
+### Infrastructure
+
+* Docker
+* AWS ECS
+* Nginx
+
+---
+
+# 📚 Key Learnings From This Project
+
+* React Component Architecture
+* Context API State Management
+* AI-Powered Interview Systems
+* Voice Processing Workflows
+* Whisper Integration
+* Groq LLM Integration
+* ATS Integration Concepts
+* Docker Deployment
+* AWS ECS Deployment
+* Redis Caching
+* Production Infrastructure
+* Candidate Lifecycle Management
+* Assessment Management Systems
+* Cloud-Based Application Deployment
+
+---
+
+# 🎯 Project Outcome
 
 VoicaHire demonstrates the implementation of a scalable AI-driven recruitment platform capable of managing candidate interviews, multilingual voice communication, assessments, ATS integrations, and cloud-native deployment workflows using modern full-stack technologies.
+
+The project showcases expertise in full-stack development, AI integration, speech processing, cloud deployment, candidate management, and production-ready software architecture.
